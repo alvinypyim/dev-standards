@@ -1,6 +1,6 @@
 # Dev Standards
 
-Status: Draft v0.1.0
+Status: Draft, not yet released
 
 The single source of truth for how we write, check and ship code in this
 project.  It is written for engineers and for AI agents.  Linters and CI
