@@ -11,6 +11,7 @@ check the current typescript-eslint, Prettier and editorconfig-checker docs.
 Example files live in [configs/](../configs/):
 
 - [.prettierrc.json](../configs/.prettierrc.json)
+- [.prettierignore](../configs/.prettierignore)
 - [.editorconfig](../configs/.editorconfig)
 - [eslint.config.js](../configs/eslint.config.js)
 

@@ -22,8 +22,8 @@
 
 ## Exceptions to the formatting rules
 
-Keep this list short.  Define it once in `.prettierignore` and the
-EditorConfig checker's ignore file.
+Keep this list short.  Define it once in `.prettierignore` (see
+[configs/](../configs/)) and the EditorConfig checker's ignore file.
 
 - Markdown files (`*.md`), because Prettier collapses the two spaces after
   each sentence.
