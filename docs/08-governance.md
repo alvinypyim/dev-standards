@@ -35,7 +35,7 @@
 Examples:
 
 ```text
-feat(auth): add refresh token rotation
+feat(parser): add streaming support
 fix: handle empty input in the parser
 docs: update the tooling section
 feat!: drop support for Node 20

@@ -19,7 +19,7 @@ Nothing has been released yet.
   `scripts` in `package.json` and run tools through the project's
   `bin/exec` script, which calls `nvm-yarn-kit`.
 - AI behaviour rules and AI agent instructions (`AGENTS.md`).
-- Security, privacy, legal and authentication rules.
+- Security, privacy and legal rules.
 - Governance, commit rules, open decisions and not-yet-verified items.
 - Conventional Commits as the commit message standard.  Commit messages are
   the first line only, with no body or footers.  AI agents are not credited

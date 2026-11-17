@@ -35,8 +35,8 @@ Every rule carries a tag:
   CI, environment setup
 - [AI behaviour](docs/06-ai-behaviour.md): rules for anything that calls a
   model
-- [Security, privacy and authentication](docs/07-security-privacy-auth.md):
-  security, privacy, legal, sign-in
+- [Security and privacy](docs/07-security-and-privacy.md): security,
+  privacy, legal
 - [Governance](docs/08-governance.md): versioning, open decisions, unverified
   items
 - [configs/](configs/): example Prettier, EditorConfig and ESLint configs

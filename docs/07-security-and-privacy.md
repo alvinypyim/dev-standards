@@ -1,6 +1,4 @@
-# Security, privacy and authentication
-
-## Security, privacy and legal
+# Security and privacy
 
 - Never commit or paste credentials, API keys, PII or production data.
   Redact first.
@@ -16,18 +14,3 @@
 - Security and legal review is required for anything touching access
   control, personal data or compliance.
 - This document is not legal advice.
-
-## Authentication
-
-These rules apply where a project signs users in.
-
-- Use the authorisation code flow with PKCE.
-- Verify every ID token on the server (signature, audience, issuer, expiry).
-- Keep sessions in `HttpOnly`, `Secure`, `SameSite` cookies.  Never use
-  `localStorage` for tokens.
-- Key records by the provider's stable `sub` claim, not by email address.
-- Keep sign-in and access to provider APIs separate.  Request API scopes
-  later, only when needed.
-- Encrypt stored refresh tokens.  Let users disconnect and delete their data.
-- Keep the client secret in a secrets manager and use exact redirect URIs per
-  environment.

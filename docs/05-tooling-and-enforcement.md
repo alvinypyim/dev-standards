@@ -46,9 +46,6 @@ Commands, run from the repository root:
 - **CI (the real gate):** every pull request runs the lint, format check and
   type check commands above, tests and `editorconfig-checker`.  A failure
   blocks merging.
-- **Shared setup:** the `dev-config` package holds the shared settings and
-  `ci-templates` holds the shared CI workflows, so every repository behaves
-  the same.
 - AI-written code passes the same gates and the same human review as any
   other code.
 
