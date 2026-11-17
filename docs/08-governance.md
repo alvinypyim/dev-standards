@@ -6,7 +6,6 @@
 - Record every change in [CHANGELOG.md](../CHANGELOG.md).
 - Change standards through pull requests with a short reason.
 - Projects record which standards version they follow.
-- Renovate or Dependabot proposes updates to shared packages.
 - Keep these documents concise.  Do not duplicate lint rules in prose beyond
   what is needed to explain them.
 
@@ -29,9 +28,9 @@
 - Types map to semantic versions: `fix` is a patch, `feat` is a minor and a
   breaking change is a major.
 - Put the reasoning in the pull request description, not the commit.
-- **[Proposed]** Check commit messages with commitlint, run through the kit
-  in a `commit-msg` hook and in CI.  CI is the real gate.  Use the same rule
-  for pull request titles when merging by squash.
+- **[Proposed]** Check commit messages with commitlint, run through
+  `bin/exec` in CI.  Use the same rule for pull request titles when merging
+  by squash.
 
 Examples:
 

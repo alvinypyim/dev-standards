@@ -5,13 +5,12 @@ not repeated.
 
 ## Shared repositories
 
-- **[Required]**
-  [`nvm-yarn-kit`](https://github.com/alvinypyim/nvm-yarn-kit): Bash scripts
-  that run a project with the pinned Node and package manager.
+- **[Required]** `nvm-yarn-kit`: Bash scripts that run a project with the
+  pinned Node and package manager.
 - **[Proposed]** `shared-types`: shared TypeScript types and schemas.
 - **[Proposed]** `dev-config`: shared ESLint, Prettier and EditorConfig
   settings.
-- **[Proposed]** `ci-templates`: reusable GitHub Actions workflows.
+- **[Proposed]** `ci-templates`: reusable CI workflows.
 - **[Open]** This standards repository's name.  It is currently
   `dev-standards`.  An earlier suggestion was `engineering-standards`.
 

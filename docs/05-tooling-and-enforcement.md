@@ -38,33 +38,17 @@ Commands, run from the repository root:
 - Format: `bin/exec prettier --write .`
 - Check formatting: `bin/exec prettier --check .`
 - Type check: `bin/exec tsc --noEmit`
-- Staged files: `bin/exec lint-staged`
-
-Keep the `lint-staged` settings in `package.json`.  They are configuration,
-not scripts.
-
-```json
-{
-  "lint-staged": {
-    "*.{ts,tsx,js}": ["eslint --fix", "prettier --write"],
-    "*.{json,md,yml,css}": "prettier --write"
-  }
-}
-```
 
 ## Enforcement
 
-- **Pre-commit:** Husky with lint-staged runs the fixers on staged files.
-  The hook file calls `bin/exec lint-staged`.  Without a
-  `prepare` script, each developer activates the hooks once.  Husky's own
-  `husky` command does this.  **[Open]** This has not been tested with the
-  kit.
+- **Before committing:** run the lint, format and type check commands above
+  and fix every failure.  No pre-commit tool is used.
 - **CI (the real gate):** every pull request runs the lint, format check and
   type check commands above, tests and `editorconfig-checker`.  A failure
-  blocks merging.  Local hooks can be skipped, so CI must not be.
+  blocks merging.
 - **Shared setup:** the `dev-config` package holds the shared settings and
-  `ci-templates` holds the shared workflows, so every repository behaves the
-  same.
+  `ci-templates` holds the shared CI workflows, so every repository behaves
+  the same.
 - AI-written code passes the same gates and the same human review as any
   other code.
 
@@ -80,7 +64,6 @@ not scripts.
 - The kit's `bin/yarn` runs `yarn`.  Its `bin/exec` runs
   `yarn install --immutable`, then the given command.  Dependencies are
   installed only when `bin/exec` runs.
-- The kit does not install Git hooks.  Set up Husky in each repository.
 - Running the kit twice is safe.
 - Each repository has its own `bin/exec` script that fetches a tagged
   release of the kit and calls the kit's `bin/exec`.  See `example/bin/exec`

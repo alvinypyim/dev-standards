@@ -32,7 +32,7 @@ Every rule carries a tag:
 - [Repositories](docs/03-repositories.md): layout and sharing rules
 - [Code style](docs/04-code-style.md): formatting and Clean Code rules
 - [Tooling and enforcement](docs/05-tooling-and-enforcement.md): tooling,
-  hooks, CI, environment setup
+  CI, environment setup
 - [AI behaviour](docs/06-ai-behaviour.md): rules for anything that calls a
   model
 - [Security, privacy and authentication](docs/07-security-privacy-auth.md):
