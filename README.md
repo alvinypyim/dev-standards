@@ -44,6 +44,7 @@ Every rule carries a tag:
 ├── README.md
 ├── CHANGELOG.md
 ├── AGENTS.md
+├── LICENSE
 ├── docs/
 └── configs/
 ```
@@ -52,5 +53,9 @@ Every rule carries a tag:
 
 Change standards through pull requests with a short reason, and add an entry
 to [CHANGELOG.md](CHANGELOG.md).  See [governance](docs/05-governance.md).
+
+## Licence
+
+Released under the [MIT licence](LICENSE).
 
 This is not legal advice.

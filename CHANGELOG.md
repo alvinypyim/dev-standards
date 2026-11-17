@@ -27,5 +27,6 @@ Nothing has been released yet.
 - Two spaces after each sentence, in code comments and Markdown prose.
 - `.prettierignore` excludes Markdown so Prettier keeps the two spaces after
   each sentence.
+- MIT licence.
 - Example Prettier, EditorConfig and ESLint configs under `configs/`.  These
   have not been run.
