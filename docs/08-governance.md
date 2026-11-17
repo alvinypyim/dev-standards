@@ -1,0 +1,53 @@
+# Governance
+
+## Versioning and change
+
+- Tag releases with semantic versions, for example `v1.0.0`.
+- Record every change in [CHANGELOG.md](../CHANGELOG.md).
+- Change standards through pull requests with a short reason.
+- Projects record which standards version they follow.
+- Renovate or Dependabot proposes updates to shared packages.
+- Keep these documents concise.  Do not duplicate lint rules in prose beyond
+  what is needed to explain them.
+
+## Commits
+
+- **[Required]** Write commit messages as
+  [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
+- **[Required]** A commit message is the first line only.  Do not add a body
+  or footers.
+- **[Required]** Do not credit an AI agent in a commit.  Omit the
+  `Co-authored-by` line in every commit and in the project.  The person who
+  makes the commit takes full responsibility for it.
+- Format: `type(scope): description`.  The scope is optional.
+- **[Proposed]** Types: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`,
+  `test`, `build`, `ci`, `chore` and `revert`.
+- **[Proposed]** Write the description in the imperative mood, in lower
+  case, with no full stop, and keep the first line to 72 characters.
+- Mark a breaking change with `!` after the type or scope.  Do not use a
+  `BREAKING CHANGE:` footer, because commits have no footers.
+- Types map to semantic versions: `fix` is a patch, `feat` is a minor and a
+  breaking change is a major.
+- Put the reasoning in the pull request description, not the commit.
+- **[Proposed]** Check commit messages with commitlint, run through the kit
+  in a `commit-msg` hook and in CI.  CI is the real gate.  Use the same rule
+  for pull request titles when merging by squash.
+
+Examples:
+
+```text
+feat(auth): add refresh token rotation
+fix: handle empty input in the parser
+docs: update the tooling section
+feat!: drop support for Node 20
+```
+
+## Open decisions
+
+- Semicolons in code.
+
+## Not yet verified
+
+- The ESLint and Prettier configs have not been run.
+- Model availability and Corepack status need checking against current
+  documentation.
