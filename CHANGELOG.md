@@ -16,7 +16,8 @@ Nothing has been released yet.
 - Code style rules: formatting, dates and times, exceptions and Clean Code
   limits.
 - Tooling, enforcement and environment setup.  Repositories define no
-  `scripts` in `package.json` and run tools through `nvm-yarn-kit`.
+  `scripts` in `package.json` and run tools through the project's
+  `bin/exec` script, which calls `nvm-yarn-kit`.
 - AI behaviour rules and AI agent instructions (`AGENTS.md`).
 - Security, privacy, legal and authentication rules.
 - Governance, commit rules, open decisions and not-yet-verified items.

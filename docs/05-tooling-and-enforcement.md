@@ -28,17 +28,17 @@ Notes:
 ### No `scripts` in `package.json`
 
 **[Required]** Do not define `scripts` in `package.json`.  Run every tool
-through `nvm-yarn-kit`, which uses the pinned Node and package manager and
-puts `node_modules/.bin` on the path.  The kit is cloned as `.nvm-yarn-kit`
-in each repository.
+through the project's `bin/exec` script.  It calls `nvm-yarn-kit`, which uses
+the pinned Node and package manager and puts `node_modules/.bin` on the
+path.  Create `bin/exec` in each repository from the kit's `example/` project.
 
 Commands, run from the repository root:
 
-- Lint: `.nvm-yarn-kit/bin/exec eslint .`
-- Format: `.nvm-yarn-kit/bin/exec prettier --write .`
-- Check formatting: `.nvm-yarn-kit/bin/exec prettier --check .`
-- Type check: `.nvm-yarn-kit/bin/exec tsc --noEmit`
-- Staged files: `.nvm-yarn-kit/bin/exec lint-staged`
+- Lint: `bin/exec eslint .`
+- Format: `bin/exec prettier --write .`
+- Check formatting: `bin/exec prettier --check .`
+- Type check: `bin/exec tsc --noEmit`
+- Staged files: `bin/exec lint-staged`
 
 Keep the `lint-staged` settings in `package.json`.  They are configuration,
 not scripts.
@@ -55,7 +55,7 @@ not scripts.
 ## Enforcement
 
 - **Pre-commit:** Husky with lint-staged runs the fixers on staged files.
-  The hook file calls `.nvm-yarn-kit/bin/exec lint-staged`.  Without a
+  The hook file calls `bin/exec lint-staged`.  Without a
   `prepare` script, each developer activates the hooks once.  Husky's own
   `husky` command does this.  **[Open]** This has not been tested with the
   kit.
@@ -77,13 +77,14 @@ not scripts.
   installing that version if needed.  If nvm is missing, it warns and uses
   the system Node.  It does not install nvm.
 - The kit enables Corepack, then activates the pinned package manager.
-- `bin/yarn` runs `yarn`.  `bin/exec` runs `yarn install --immutable`, then
-  the given command.  Dependencies are installed only when `bin/exec` runs.
+- The kit's `bin/yarn` runs `yarn`.  Its `bin/exec` runs
+  `yarn install --immutable`, then the given command.  Dependencies are
+  installed only when `bin/exec` runs.
 - The kit does not install Git hooks.  Set up Husky in each repository.
 - Running the kit twice is safe.
-- Each repository clones a tagged release of the kit as `.nvm-yarn-kit` and
-  calls its scripts.  See the `example/` project in the kit.  Pin the tag,
-  and update it deliberately.
+- Each repository has its own `bin/exec` script that fetches a tagged
+  release of the kit and calls the kit's `bin/exec`.  See `example/bin/exec`
+  in the kit.  Pin the tag, and update it deliberately.
 - Corepack's status in Node distributions has been changing.  Check the
   current Node docs.
 - **[Open]** nvm does not run natively on Windows.  The kit does not cover

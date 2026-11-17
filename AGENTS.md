@@ -6,7 +6,7 @@ These standards apply to every repository in the project.  Read the
 Before you finish any task:
 
 1. Run lint, format check and type check through the kit, for example
-   `.nvm-yarn-kit/bin/exec eslint .`.  See
+   `bin/exec eslint .`.  See
    [tooling](docs/05-tooling-and-enforcement.md#no-scripts-in-packagejson)
    for the commands.  Fix every failure.
 2. Follow [code style](docs/04-code-style.md) exactly: 80 columns, single
