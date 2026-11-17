@@ -69,3 +69,16 @@ Commands, run from the repository root:
   current Node docs.
 - **[Open]** nvm does not run natively on Windows.  The kit does not cover
   Windows.  Decide whether Windows needs support (nvm-windows or WSL).
+
+## Repositories
+
+A project is split into several repositories, plus shared ones so code is
+not repeated.  The one shared repository we require is `nvm-yarn-kit`.  See
+[environment setup](#environment-setup-nvm-yarn-kit).
+
+- Do not extract code into a shared repository until two places use it.
+- Version shared packages with semantic versions and publish them to a
+  private registry.  Keep registry tokens in CI secrets only.
+- Avoid Git submodules.
+- If the team is small at the start, one repository with separate folders is
+  acceptable.  Split later.

@@ -7,18 +7,18 @@ Before you finish any task:
 
 1. Run lint, format check and type check through the kit, for example
    `bin/exec eslint .`.  See
-   [tooling](docs/05-tooling-and-enforcement.md#no-scripts-in-packagejson)
+   [tooling](docs/03-tooling-and-enforcement.md#no-scripts-in-packagejson)
    for the commands.  Fix every failure.
-2. Follow [code style](docs/04-code-style.md) exactly: 80 columns, single
+2. Follow [code style](docs/02-code-style.md) exactly: 80 columns, single
    quotes, no trailing commas, no braces around single-statement bodies.
 3. Keep functions small.  Do not exceed the limits in
-   [Clean Code rules](docs/04-code-style.md#clean-code-rules).
+   [Clean Code rules](docs/02-code-style.md#clean-code-rules).
 4. Do not add `scripts` to `package.json`.  Run tools through the kit.
 5. Write commit messages as a single Conventional Commits line, with no body
    or footers, for example `fix(parser): handle empty input`.  Never add a
    `Co-authored-by` line or any other credit to an AI agent.  The person who
    commits takes full responsibility.  See
-   [commits](docs/08-governance.md#commits).
+   [commits](docs/05-governance.md#commits).
 6. Validate external input and model output against a schema.
 7. Never hard-code region, model IDs, secrets or credentials.
 8. Never log or store tokens or personal data beyond what the design

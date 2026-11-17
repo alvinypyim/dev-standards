@@ -10,16 +10,16 @@ Nothing has been released yet.
 
 ### Added
 
-- Initial draft of the engineering standards, split into topic documents
+- Initial draft of the engineering standards, split into five documents
   under `docs/`.
-- Purpose and scope, technology stack and repository layout.
+- Overview: purpose, scope, rule tags and technology stack.
 - Code style rules: formatting, dates and times, exceptions and Clean Code
   limits.
-- Tooling, enforcement and environment setup.  Repositories define no
-  `scripts` in `package.json` and run tools through the project's
-  `bin/exec` script, which calls `nvm-yarn-kit`.
-- AI behaviour rules and AI agent instructions (`AGENTS.md`).
-- Security, privacy and legal rules.
+- Tooling, enforcement, environment setup and repository rules.
+  Repositories define no `scripts` in `package.json` and run tools through
+  the project's `bin/exec` script, which calls `nvm-yarn-kit`.
+- AI behaviour, security and privacy rules, and AI agent instructions
+  (`AGENTS.md`).
 - Governance, commit rules, open decisions and not-yet-verified items.
 - Conventional Commits as the commit message standard.  Commit messages are
   the first line only, with no body or footers.  AI agents are not credited

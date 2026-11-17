@@ -44,6 +44,7 @@ feat!: drop support for Node 20
 ## Open decisions
 
 - Semicolons in code.
+- The name of this repository.
 
 ## Not yet verified
 

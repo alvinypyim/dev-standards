@@ -13,8 +13,8 @@ enforce what they can.  These documents cover everything else.
 
 - **AI agents:** read [AGENTS.md](AGENTS.md) first.  It holds the checklist to
   run before finishing any task.
-- **Engineers:** read [code style](docs/04-code-style.md) and
-  [tooling and enforcement](docs/05-tooling-and-enforcement.md).
+- **Engineers:** read [code style](docs/02-code-style.md) and
+  [tooling and enforcement](docs/03-tooling-and-enforcement.md).
 
 ## Rule tags
 
@@ -27,18 +27,15 @@ Every rule carries a tag:
 ## Contents
 
 - [AGENTS.md](AGENTS.md): instructions for AI agents
-- [Purpose and scope](docs/01-purpose-and-scope.md): who these are for
-- [Technology stack](docs/02-technology-stack.md): language and runtime
-- [Repositories](docs/03-repositories.md): layout and sharing rules
-- [Code style](docs/04-code-style.md): formatting and Clean Code rules
-- [Tooling and enforcement](docs/05-tooling-and-enforcement.md): tooling,
-  CI, environment setup
-- [AI behaviour](docs/06-ai-behaviour.md): rules for anything that calls a
-  model
-- [Security and privacy](docs/07-security-and-privacy.md): security,
-  privacy, legal
-- [Governance](docs/08-governance.md): versioning, open decisions, unverified
-  items
+- [Overview](docs/01-overview.md): purpose, scope, rule tags and technology
+  stack
+- [Code style](docs/02-code-style.md): formatting and Clean Code rules
+- [Tooling and enforcement](docs/03-tooling-and-enforcement.md): tooling,
+  CI, environment setup and repositories
+- [AI, security and privacy](docs/04-ai-security-and-privacy.md): rules for
+  anything that calls a model, plus security and privacy
+- [Governance](docs/05-governance.md): versioning, commits, open decisions,
+  unverified items
 - [configs/](configs/): example Prettier, EditorConfig and ESLint configs
 - [CHANGELOG.md](CHANGELOG.md): release history
 
@@ -56,6 +53,6 @@ Every rule carries a tag:
 ## Changing the standards
 
 Change standards through pull requests with a short reason, and add an entry
-to [CHANGELOG.md](CHANGELOG.md).  See [governance](docs/08-governance.md).
+to [CHANGELOG.md](CHANGELOG.md).  See [governance](docs/05-governance.md).
 
 This is not legal advice.
