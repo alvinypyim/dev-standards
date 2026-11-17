@@ -24,7 +24,8 @@ Before you finish any task:
 8. Never log or store tokens or personal data beyond what the design
    allows.
 9. Write Australian English in comments, docs and user-facing text
-   (organisation, optimise, colour).  Avoid hype words and em-dashes.
+   (organisation, optimise, colour).  Avoid hype words and em-dashes.  Put two
+   spaces after each sentence, including in code comments.
 10. If a rule here conflicts with the task, say so and ask.  Do not quietly
     break the rule.
 11. Treat your output as a first draft for qualified review, especially for

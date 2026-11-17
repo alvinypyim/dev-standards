@@ -7,10 +7,13 @@
 - **[Required]** No trailing comma after the last item of an array or object.
 - **[Required]** No braces around a single-statement body.  Write
   `if (condition) doThis();`, not a block.
+- **[Required]** Put two spaces after each sentence, in code comments and
+  in Markdown prose.
 - **[Proposed]** Indent with 2 spaces.
 - **[Open]** Semicolons.  Prettier adds them by default.  Set `"semi": false`
   if the project prefers none.
-- **[Proposed]** Wrap Markdown prose at 80 characters.
+- **[Proposed]** Wrap Markdown prose at 80 characters by hand, because
+  Prettier does not format Markdown.
 
 ## Dates and times
 
@@ -22,6 +25,8 @@
 Keep this list short.  Define it once in `.prettierignore` and the
 EditorConfig checker's ignore file.
 
+- Markdown files (`*.md`), because Prettier collapses the two spaces after
+  each sentence.
 - JSON files must use double quotes, as the JSON specification requires.
 - Lockfiles such as `yarn.lock`.
 - Generated output, build folders, binaries and images.

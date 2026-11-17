@@ -24,5 +24,8 @@ Nothing has been released yet.
 - Conventional Commits as the commit message standard.  Commit messages are
   the first line only, with no body or footers.  AI agents are not credited
   in commits, because the person who commits takes full responsibility.
+- Two spaces after each sentence, in code comments and Markdown prose.
+- `.prettierignore` excludes Markdown so Prettier keeps the two spaces after
+  each sentence.
 - Example Prettier, EditorConfig and ESLint configs under `configs/`.  These
   have not been run.
