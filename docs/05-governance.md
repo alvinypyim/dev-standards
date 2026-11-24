@@ -28,8 +28,8 @@
 - Types map to semantic versions: `fix` is a patch, `feat` is a minor and a
   breaking change is a major.
 - Put the reasoning in the pull request description, not the commit.
-- **[Proposed]** Check commit messages with commitlint, run through
-  `bin/exec` in CI.  Use the same rule for pull request titles when merging
+- **[Proposed]** Check commit messages with commitlint in CI.  Run it as the
+  language section describes.  Use the same rule for pull request titles when merging
   by squash.
 
 Examples:
@@ -43,11 +43,11 @@ feat!: drop support for Node 20
 
 ## Open decisions
 
-- Semicolons in code.
+- Semicolons in TypeScript code.
 - The name of this repository.
 
 ## Not yet verified
 
-- The ESLint and Prettier configs have not been run.
+- The TypeScript configs have not been run.
 - Model availability and Corepack status need checking against current
   documentation.

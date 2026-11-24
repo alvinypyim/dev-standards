@@ -1,48 +1,22 @@
 # Code style
 
+These rules apply to every language.  Language-specific formatting, such as
+quote style, braces and trailing commas, lives in the language sections listed
+in the [overview](01-overview.md#languages).
+
 ## Formatting rules
 
 - **[Required]** Every file is at most 80 characters wide.
-- **[Required]** Use single quotes in all files.
-- **[Required]** No trailing comma after the last item of an array or object.
-- **[Required]** No braces around a single-statement body.  Write
-  `if (condition) doThis();`, not a block.
 - **[Required]** Put two spaces after each sentence, in code comments and
   in Markdown prose.
-- **[Proposed]** Indent with 2 spaces.
-- **[Open]** Semicolons.  Prettier adds them by default.  Set `"semi": false`
-  if the project prefers none.
-- **[Proposed]** Wrap Markdown prose at 80 characters by hand, because
-  Prettier does not format Markdown.
+- **[Proposed]** Wrap Markdown prose at 80 characters by hand.
+- **[Open]** How the two-space rule is enforced in Markdown.  Prettier
+  collapses the spaces, so Markdown files are excluded from it.
 
 ## Dates and times
 
 - Store every time in UTC with its IANA time zone, for example
   Australia/Adelaide.
-
-## Exceptions to the formatting rules
-
-Keep this list short.  Define it once in `.prettierignore` (see
-[configs/](../configs/)) and the EditorConfig checker's ignore file.
-
-- Markdown files (`*.md`), because Prettier collapses the two spaces after
-  each sentence.
-- JSON files must use double quotes, as the JSON specification requires.
-- Lockfiles such as `yarn.lock`.
-- Generated output, build folders, binaries and images.
-- URLs that cannot be wrapped.
-- Long JSON string values, for example descriptions in `package.json`.
-
-## Notes on braceless bodies
-
-- A braceless body is a known source of bugs.  If someone adds a second line
-  under the `if`, it runs unconditionally and TypeScript will not warn.
-- Allow it only for a single statement.  A guard clause on one line is the
-  best fit: `if (isEmpty) return;`.
-- The `curly` rule (`multi-or-nest`) enforces it.  Braces are then required
-  when a body spans several lines.
-- With an 80-character limit, a long condition that wraps will need braces.
-  Keep guard conditions short.
 
 ## Clean Code rules
 

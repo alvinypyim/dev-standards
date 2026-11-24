@@ -11,8 +11,8 @@ enforce what they can.  These documents cover everything else.
 
 - **AI agents:** read [AGENTS.md](AGENTS.md) first.  It holds the checklist to
   run before finishing any task.
-- **Engineers:** read [code style](docs/02-code-style.md) and
-  [tooling and enforcement](docs/03-tooling-and-enforcement.md).
+- **Engineers:** read [code style](docs/02-code-style.md), then the
+  [language sections](docs/01-overview.md#languages) your project uses.
 
 ## Rule tags
 
@@ -25,16 +25,18 @@ Every rule carries a tag:
 ## Contents
 
 - [AGENTS.md](AGENTS.md): instructions for AI agents
-- [Overview](docs/01-overview.md): purpose, scope, rule tags and technology
-  stack
-- [Code style](docs/02-code-style.md): formatting and Clean Code rules
-- [Tooling and enforcement](docs/03-tooling-and-enforcement.md): tooling,
-  CI, environment setup and repositories
+- [Overview](docs/01-overview.md): purpose, scope, rule tags and languages
+- [Code style](docs/02-code-style.md): language-neutral formatting and Clean
+  Code rules
+- [Tooling and enforcement](docs/03-tooling-and-enforcement.md): CI gate and
+  repositories
+- [TypeScript](docs/languages/typescript.md): formatting, tooling,
+  enforcement and environment setup
 - [AI, security and privacy](docs/04-ai-security-and-privacy.md): rules for
   anything that calls a model, plus security and privacy
 - [Governance](docs/05-governance.md): versioning, commits, open decisions,
   unverified items
-- [configs/](configs/): example Prettier, EditorConfig and ESLint configs
+- [configs/](configs/): example configs, one folder per language
 - [CHANGELOG.md](CHANGELOG.md): release history
 
 ## Repository layout
@@ -46,7 +48,9 @@ Every rule carries a tag:
 ├── AGENTS.md
 ├── LICENSE
 ├── docs/
+│   └── languages/
 └── configs/
+    └── typescript/
 ```
 
 ## Changing the standards

@@ -6,6 +6,16 @@ All notable changes to these standards are recorded here.  The format follows
 
 ## Unreleased
 
+### Changed
+
+- Moved all TypeScript rules into `docs/languages/typescript.md`.  This
+  covers quotes, braces, trailing commas, Prettier, ESLint, `bin/exec`,
+  `nvm-yarn-kit` and enforcement commands.  JavaScript is not a separate
+  option.
+- Moved the example configs into `configs/typescript/`.
+- Made the overview, code style and tooling documents language-neutral.
+- Language rules are now optional features that a project selects.
+
 ## 0.1.0 - 2026-11-17
 
 ### Added

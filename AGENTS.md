@@ -5,15 +5,17 @@ These standards apply to every repository in the project.  Read the
 
 Before you finish any task:
 
-1. Run lint, format check and type check through the kit, for example
-   `bin/exec eslint .`.  See
-   [tooling](docs/03-tooling-and-enforcement.md#no-scripts-in-packagejson)
-   for the commands.  Fix every failure.
-2. Follow [code style](docs/02-code-style.md) exactly: 80 columns, single
-   quotes, no trailing commas, no braces around single-statement bodies.
+1. Read the language sections that apply to the project, listed in the
+   [overview](docs/01-overview.md#languages).  Run its lint, format check and
+   type check commands and fix every failure.  For TypeScript, see
+   [the section](docs/languages/typescript.md#no-scripts-in-packagejson).
+2. Follow [code style](docs/02-code-style.md) and the language section
+   exactly.  For TypeScript that means 80 columns, single quotes, no
+   trailing commas and no braces around single-statement bodies.
 3. Keep functions small.  Do not exceed the limits in
    [Clean Code rules](docs/02-code-style.md#clean-code-rules).
-4. Do not add `scripts` to `package.json`.  Run tools through the kit.
+4. In TypeScript projects, do not add `scripts` to
+   `package.json`.  Run tools through `bin/exec`.
 5. Write commit messages as a single Conventional Commits line, with no body
    or footers, for example `fix(parser): handle empty input`.  Never add a
    `Co-authored-by` line or any other credit to an AI agent.  The person who

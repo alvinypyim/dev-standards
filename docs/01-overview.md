@@ -15,7 +15,10 @@ Every rule carries a tag:
 - **[Proposed]** suggested during design and open to change.
 - **[Open]** not yet decided.
 
-## Technology stack
+## Languages
 
-- **[Required]** TypeScript for all code.
-- **[Proposed]** Node.js managed by nvm, Yarn managed by Corepack.
+Language rules are optional features.  A project applies the sections for the
+languages it uses, on top of the language-neutral documents.
+
+- [TypeScript](languages/typescript.md): formatting,
+  tooling, enforcement and environment setup.
