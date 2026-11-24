@@ -10,8 +10,8 @@ in the [overview](01-overview.md#languages).
 - **[Required]** Put two spaces after each sentence, in code comments and
   in Markdown prose.
 - **[Proposed]** Wrap Markdown prose at 80 characters by hand.
-- **[Open]** How the two-space rule is enforced in Markdown.  Prettier
-  collapses the spaces, so Markdown files are excluded from it.
+- **[Open]** How the two-space rule is enforced in Markdown.  Some
+  formatters collapse the spaces, so Markdown files are excluded from them.
 
 ## Dates and times
 
@@ -25,11 +25,12 @@ review.
 
 - **[Required]** Follow Clean Code principles across all projects.
 - Functions are small and do one thing.
-- Names say what a thing is or does, for example `minutesUntilNextEvent`.
+- Names say what a thing is or does, for example minutes until next event.
+  Use the language's naming convention.
 - No magic values.  Give numbers and strings a named constant, for example
-  `HIGH_CONFIDENCE_THRESHOLD`.
+  a high confidence threshold.
 - Prefer guard clauses and early returns over deep nesting.
-- No nested ternaries.
+- No nested conditional expressions.
 - Comments explain why, not what.  Delete dead code.
 - Handle errors explicitly.  Never swallow an error silently.
 - Separate concerns.  Storage, queues and third-party APIs sit behind their

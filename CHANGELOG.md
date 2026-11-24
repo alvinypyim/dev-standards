@@ -23,6 +23,8 @@ All notable changes to these standards are recorded here.  The format follows
 - Moved the example configs into `configs/typescript/`.
 - Made the overview, code style and tooling documents language-neutral.
 - Language rules are now optional features that a project selects.
+- Removed remaining language-specific wording from `AGENTS.md`, code style
+  and governance.  Language open decisions now live in each language section.
 
 ## 0.1.0 - 2026-11-17
 
