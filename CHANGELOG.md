@@ -6,6 +6,8 @@ All notable changes to these standards are recorded here.  The format follows
 
 ## Unreleased
 
+## 0.2.0 - 2026-11-24
+
 ### Added
 
 - Java, .NET and Rust sections under `docs/languages/`, with example configs
