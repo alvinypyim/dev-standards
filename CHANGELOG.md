@@ -6,6 +6,12 @@ All notable changes to these standards are recorded here.  The format follows
 
 ## Unreleased
 
+### Added
+
+- Python section in `docs/languages/python.md`, with example `pyproject.toml`,
+  EditorConfig and `bin/exec` under `configs/python/`.  Python projects use
+  uv through the same `bin/exec` entry point.  These have not been run.
+
 ### Changed
 
 - Moved all TypeScript rules into `docs/languages/typescript.md`.  This

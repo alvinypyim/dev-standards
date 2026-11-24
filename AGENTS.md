@@ -11,11 +11,13 @@ Before you finish any task:
    [the section](docs/languages/typescript.md#no-scripts-in-packagejson).
 2. Follow [code style](docs/02-code-style.md) and the language section
    exactly.  For TypeScript that means 80 columns, single quotes, no
-   trailing commas and no braces around single-statement bodies.
+   trailing commas and no braces around single-statement bodies.  For
+   Python, see [the section](docs/languages/python.md).
 3. Keep functions small.  Do not exceed the limits in
    [Clean Code rules](docs/02-code-style.md#clean-code-rules).
-4. In TypeScript projects, do not add `scripts` to
-   `package.json`.  Run tools through `bin/exec`.
+4. Run every tool through `bin/exec`.  In TypeScript projects, do not add
+   `scripts` to `package.json`.  In Python projects, do not add a task
+   runner.
 5. Write commit messages as a single Conventional Commits line, with no body
    or footers, for example `fix(parser): handle empty input`.  Never add a
    `Co-authored-by` line or any other credit to an AI agent.  The person who

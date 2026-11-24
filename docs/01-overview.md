@@ -22,3 +22,5 @@ languages it uses, on top of the language-neutral documents.
 
 - [TypeScript](languages/typescript.md): formatting,
   tooling, enforcement and environment setup.
+- [Python](languages/python.md): formatting, tooling, enforcement and
+  environment setup.
