@@ -24,3 +24,9 @@ languages it uses, on top of the language-neutral documents.
   tooling, enforcement and environment setup.
 - [Python](languages/python.md): formatting, tooling, enforcement and
   environment setup.
+- [Java](languages/java.md): formatting, tooling, enforcement and environment
+  setup.
+- [.NET](languages/dotnet.md): formatting, tooling, enforcement and
+  environment setup.
+- [Rust](languages/rust.md): formatting, tooling, enforcement and environment
+  setup.

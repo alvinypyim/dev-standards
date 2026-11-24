@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Run a Gradle task through the project's pinned Gradle wrapper.  Example:
+#   bin/exec spotlessCheck
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+# The wrapper pins Gradle.  A toolchain in build.gradle.kts pins Java.
+exec ./gradlew --console=plain "$@"

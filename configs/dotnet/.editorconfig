@@ -1,0 +1,13 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+max_line_length = 80
+
+[*.cs]
+# Braces only when a body spans several lines.
+csharp_prefer_braces = when_multiline:warning
+dotnet_diagnostic.IDE0011.severity = warning
+# Cyclomatic complexity.  The limit is in CodeMetricsConfig.txt.
+dotnet_diagnostic.CA1502.severity = warning

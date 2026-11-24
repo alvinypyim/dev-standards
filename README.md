@@ -34,6 +34,12 @@ Every rule carries a tag:
   enforcement and environment setup
 - [Python](docs/languages/python.md): formatting, tooling, enforcement and
   environment setup
+- [Java](docs/languages/java.md): formatting, tooling, enforcement and
+  environment setup
+- [.NET](docs/languages/dotnet.md): formatting, tooling, enforcement and
+  environment setup
+- [Rust](docs/languages/rust.md): formatting, tooling, enforcement and
+  environment setup
 - [AI, security and privacy](docs/04-ai-security-and-privacy.md): rules for
   anything that calls a model, plus security and privacy
 - [Governance](docs/05-governance.md): versioning, commits, open decisions,
@@ -52,7 +58,10 @@ Every rule carries a tag:
 ├── docs/
 │   └── languages/
 └── configs/
+    ├── dotnet/
+    ├── java/
     ├── python/
+    ├── rust/
     └── typescript/
 ```
 

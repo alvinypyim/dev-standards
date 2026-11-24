@@ -1,0 +1,5 @@
+# Example.  Not run.  Check key names against the current Clippy docs.
+cognitive-complexity-threshold = 10
+excessive-nesting-threshold = 3
+too-many-arguments-threshold = 3
+too-many-lines-threshold = 20
